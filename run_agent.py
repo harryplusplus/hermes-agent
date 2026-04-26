@@ -10890,6 +10890,7 @@ class AIAgent:
                         from hermes_cli.plugins import invoke_hook as _invoke_hook
                         _invoke_hook(
                             "pre_api_request",
+                            api_kwargs=api_kwargs,
                             task_id=effective_task_id,
                             session_id=self.session_id or "",
                             platform=self.platform or "",
